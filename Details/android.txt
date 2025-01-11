@@ -1,0 +1,56 @@
+D:\Softwares\Android SDK\platform-tools
+
+adb -s emulator-5554 -e install -r  android-server-2.32.0.apk
+adb -s emulator-5554 shell am start -a android.intent.action.MAIN -n org.openqa.selenium.android.app/.MainActivity
+
+adb -s emulator-5554 forward tcp:8080 tcp:8080
+
+http://localhost:8080/wd/hub/status   : check status
+
+adb -s 4df75cca4a64308d shell am start -a android.intent.action.MAIN -n org.openqa.selenium.android.app/.MainActivity
+
+adb -s 4df75cca4a64308d forward tcp:8080 tcp:8080
+
+#17 mustafa....@gmail.com
+I was able to get it to run on the emulator, by doing a adb kill-server, then a adb start-server, and finally re forwarding the ports (adb forward tcp:8080 tcp:8080). If you still get element not found, I found that setting an implicit wait does the trick (eg driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS) )
+
+https://code.google.com/p/selenium/issues/detail?id=1005
+
+
+https://groups.google.com/forum/#!topic/selenium-users/5SzygUj4CJw
+
+We updated the Apache HttpClient library from version 4.0.3 to 4.1.2 
+because we updated HtmlUnit from 2.8 to 2.9.  An interaction between 
+the Apache HttpClient 4.1.2 and the web server embedded in the 
+ChromeDriver and InternetExplorerDriver is causing this problem. 
+
+I have a fix for this for the ChromeDriver which should be in the next 
+ChromeDriver release.  I will look at porting it to the 
+InternetExplorerDriver. 
+
+In the mean time, if you're not using the HtmlUnitDriver, if you 
+replace the Apache HttpClient 4.1.2 jar in your classpath with the 
+4.0.3 jar, these exceptions should stop happening. 
+
+https://code.google.com/p/selenium/issues/detail?id=2513
+
+myphone
+adb -s 97c003f7 shell am start -a android.intent.action.MAIN -n org.openqa.selenium.android.app/.MainActivity
+
+adb -s 97c003f7 forward tcp:8080 tcp:8080
+
+
+
+
+org.openqa.selenium.NoSuchElementException: Could not find element with id: subitem1.singleAnswerMultipleChoice.answerChoiceRow1.state0
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Linux', os.arch: 'armv7l', os.version: '3.0.31-1292854', java.version: '0'
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 5.22 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.33.0', revision: '4e90c97', time: '2013-05-22 15:33:32'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_21'
+Session ID: ac36a2da-06ba-48df-b1ab-272accb8b0c9
+Driver info: org.openqa.selenium.android.AndroidDriver
+Capabilities [{platform=ANDROID, javascriptEnabled=true, acceptSslCerts=true, browserName=android, unexpectedAlertBehaviour=accept, rotatable=true, locationContextEnabled=true, webdriver.remote.sessionid=ac36a2da-06ba-48df-b1ab-272accb8b0c9, memory=true, version=16, handlesAlerts=true, browserConnectionEnabled=true, battery=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]

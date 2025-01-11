@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Windows+Safari Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">188.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Windows+IE9 Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">72.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Windows+Chrome Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">17.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Andorid Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">1.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Windows+Firefox Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">40.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">3</td><td class="numi">3</td><td class="numi_attn">2</td><td class="numi">0</td><td class="numi">188.6 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Windows+Safari Test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">SeGridTest<td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Windows+Safari Test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">SeGridTest<td><a href="#m2"><b>afterTest</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Windows+Safari Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">SeGridTest<td><a href="#m3"><b>testBmiCalculator</b>  ("Test Bmi Calculator")</a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Windows+IE9 Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">SeGridTest<td><a href="#m4"><b>testBmiCalculator</b>  ("Test Bmi Calculator")</a></td><td class="numi">1</td><td class="numi">30972</td></tr>
+<tr><th colspan="4">Windows+Chrome Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">SeGridTest<td><a href="#m5"><b>testBmiCalculator</b>  ("Test Bmi Calculator")</a></td><td class="numi">1</td><td class="numi">2370</td></tr>
+<tr><th colspan="4">Andorid Test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">SeGridTest<td><a href="#m6"><b>setup</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Andorid Test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">SeGridTest<td><a href="#m7"><b>afterTest</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Andorid Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">SeGridTest<td><a href="#m8"><b>testBmiCalculator</b>  ("Test Bmi Calculator")</a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr><th colspan="4">Windows+Firefox Test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">SeGridTest<td><a href="#m9"><b>afterTest</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Windows+Firefox Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">SeGridTest<td><a href="#m10"><b>testBmiCalculator</b>  ("Test Bmi Calculator")</a></td><td class="numi">1</td><td class="numi">1202</td></tr>
+</table>
+<h1>Windows+Safari Test</h1>
+<a id="m1"></a><h2>SeGridTest:setup</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">Windows</td>
+<td style="padding-left:.5em;padding-right:2em">Safari</td>
+<td style="padding-left:.5em;padding-right:2em">5</td>
+<td style="padding-left:.5em;padding-right:2em">http://dl.dropbox.com/u/55228056/bmicalculator.html</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.39.0&apos;, revision: &apos;ff23eac&apos;, time: &apos;2013-12-16 16:11:15&apos;
+System info: host: &apos;MLB-BWTCL-4402&apos;, ip: &apos;172.29.16.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 169.96 seconds
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;MLB-BWTCL-4402&apos;, ip: &apos;172.29.16.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Session ID: f5ee0dc5-fdb0-43d4-8ea7-d6c9c0c9067e
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, cssSelectorsEnabled=true, javascriptEnabled=true, secureSsl=true, browserName=safari, webdriver.remote.sessionid=f5ee0dc5-fdb0-43d4-8ea7-d6c9c0c9067e, takesScreenshot=true, version=5.1.7}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+<br/>at SeGridTest.setup(SeGridTest.java:62)
+<br/>18 lines not shown
+<p>Caused by Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.39.0&apos;, revision: &apos;ff23eac&apos;, time: &apos;2013-12-16 16:11:15&apos;
+System info: host: &apos;MLB-BWTCL-4402&apos;, ip: &apos;172.29.16.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: driver.version: EventFiringWebDriver
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;MLB-BWTCL-4402&apos;, ip: &apos;172.29.16.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: driver.version: EventFiringWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+<br/>at com.sun.proxy.$Proxy2.get(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:159)
+<br/>at org.openqa.selenium.remote.server.handler.ChangeUrl.call(ChangeUrl.java:38)
+<br/>at org.openqa.selenium.remote.server.handler.ChangeUrl.call(ChangeUrl.java:1)
+<br/>at java.util.concurrent.FutureTask.run(Unknown Source)
+<br/>at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:170)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+<br/>at java.lang.Thread.run(Unknown Source)
+<br/>1 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>SeGridTest:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>SeGridTest:testBmiCalculator</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Windows+IE9 Test</h1>
+<a id="m4"></a><h2>SeGridTest:testBmiCalculator</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Windows+Chrome Test</h1>
+<a id="m5"></a><h2>SeGridTest:testBmiCalculator</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Andorid Test</h1>
+<a id="m6"></a><h2>SeGridTest:setup</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">Android</td>
+<td style="padding-left:.5em;padding-right:2em">Android</td>
+<td style="padding-left:.5em;padding-right:2em">4.4</td>
+<td style="padding-left:.5em;padding-right:2em">http://dl.dropbox.com/u/55228056/mobilebmicalculator.html</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+<p>The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see http://code.google.com/p/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+Command duration or timeout: 1.03 seconds
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;MLB-BWTCL-4402&apos;, ip: &apos;172.29.16.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_21&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:111)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:129)
+<br/>at SeGridTest.setup(SeGridTest.java:60)
+<br/>18 lines not shown
+<p>Caused by The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see http://code.google.com/p/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:177)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:105)
+<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:75)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:129)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.server.DefaultDriverFactory.callConstructor(DefaultDriverFactory.java:62)
+<br/>at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:56)
+<br/>at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:216)
+<br/>at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+<br/>at java.util.concurrent.FutureTask.run(Unknown Source)
+<br/>at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:170)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+<br/>at java.lang.Thread.run(Unknown Source)
+<br/>1 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>SeGridTest:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>SeGridTest:testBmiCalculator</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Windows+Firefox Test</h1>
+<a id="m9"></a><h2>SeGridTest:afterTest</h2>
+<div style="padding-left:3em">
+<p>java.lang.AssertionError: expected:&lt;24.4&gt; but was:&lt;&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at SeGridTest.afterTest(SeGridTest.java:90)
+<br/>18 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>SeGridTest:testBmiCalculator</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

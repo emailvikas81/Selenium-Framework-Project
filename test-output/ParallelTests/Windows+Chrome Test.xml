@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="MLB-BWTCL-4402" tests="1" failures="0" timestamp="4 Feb 2015 17:41:34 GMT" time="17.68" errors="0">
+  <testcase name="testBmiCalculator" time="2.37" classname="SeGridTest"/>
+</testsuite>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="MLB-BWTCL-4402" tests="1" failures="0" timestamp="4 Feb 2015 17:44:25 GMT" time="188.61" errors="0">
+  <testcase name="@BeforeTest setup" time="0.0" classname="SeGridTest">
+    <failure type="org.openqa.selenium.WebDriverException" message="Error communicating with the remote browser. It may have died.
+Build info: version: &amp;apos;2.39.0&amp;apos;, revision: &amp;apos;ff23eac&amp;apos;, time: &amp;apos;2013-12-16 16:11:15&amp;apos;
+System info: host: &amp;apos;MLB-BWTCL-4402&amp;apos;, ip: &amp;apos;172.29.16.55&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.8.0_25&amp;apos;
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 169.96 seconds
+Build info: version: &amp;apos;unknown&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;unknown&amp;apos;
+System info: host: &amp;apos;MLB-BWTCL-4402&amp;apos;, ip: &amp;apos;172.29.16.55&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_21&amp;apos;
+Session ID: f5ee0dc5-fdb0-43d4-8ea7-d6c9c0c9067e
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, cssSelectorsEnabled=true, javascriptEnabled=true, secureSsl=true, browserName=safari, webdriver.remote.sessionid=f5ee0dc5-fdb0-43d4-8ea7-d6c9c0c9067e, takesScreenshot=true, version=5.1.7}]">
+      <![CDATA[org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.39.0', revision: 'ff23eac', time: '2013-12-16 16:11:15'
+System info: host: 'MLB-BWTCL-4402', ip: '172.29.16.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 169.96 seconds
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'MLB-BWTCL-4402', ip: '172.29.16.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_21'
+Session ID: f5ee0dc5-fdb0-43d4-8ea7-d6c9c0c9067e
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, cssSelectorsEnabled=true, javascriptEnabled=true, secureSsl=true, browserName=safari, webdriver.remote.sessionid=f5ee0dc5-fdb0-43d4-8ea7-d6c9c0c9067e, takesScreenshot=true, version=5.1.7}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at SeGridTest.setup(SeGridTest.java:62)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.39.0', revision: 'ff23eac', time: '2013-12-16 16:11:15'
+System info: host: 'MLB-BWTCL-4402', ip: '172.29.16.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: EventFiringWebDriver
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'MLB-BWTCL-4402', ip: '172.29.16.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_21'
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy2.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:159)
+	at org.openqa.selenium.remote.server.handler.ChangeUrl.call(ChangeUrl.java:38)
+	at org.openqa.selenium.remote.server.handler.ChangeUrl.call(ChangeUrl.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterTest afterTest" time="0.0" classname="SeGridTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testBmiCalculator" time="0.0" classname="SeGridTest">
+    <skipped/>
+  </testcase>
+</testsuite>

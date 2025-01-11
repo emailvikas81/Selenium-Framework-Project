@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [ParallelTests]" parallel="tests">
+  <parameter name="platform" value="Android"/>
+  <parameter name="browser" value="Android"/>
+  <parameter name="url" value="http://dl.dropbox.com/u/55228056/mobilebmicalculator.html"/>
+  <parameter name="version" value="4.4"/>
+  <test name="Windows+Safari Test(failed)" parallel="tests" preserve-order="false">
+    <parameter name="platform" value="Windows"/>
+    <parameter name="browser" value="Safari"/>
+    <parameter name="url" value="http://dl.dropbox.com/u/55228056/bmicalculator.html"/>
+    <parameter name="version" value="5"/>
+    <classes>
+      <class name="SeGridTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterTest"/>
+          <include name="testBmiCalculator"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="Andorid Test(failed)" parallel="tests" preserve-order="false">
+    <parameter name="platform" value="Android"/>
+    <parameter name="browser" value="Android"/>
+    <parameter name="url" value="http://dl.dropbox.com/u/55228056/mobilebmicalculator.html"/>
+    <parameter name="version" value="4.4"/>
+    <classes>
+      <class name="SeGridTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterTest"/>
+          <include name="testBmiCalculator"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
